@@ -2,8 +2,7 @@
 //  GameController.swift
 //  TicTacToe
 //
-//  Created by Михаил Колотилин on 24.03.2020.
-//  Copyright © 2020 Михаил Колотилин. All rights reserved.
+//   Created by Carlos Jorge on 4/3/21.
 //
 
 import UIKit
