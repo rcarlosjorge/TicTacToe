@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="s0u-hY-1Rt">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tic Tac Toe-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="GameController" customModule="TicTacToe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="board" translatesAutoresizingMaskIntoConstraints="NO" id="RZD-Vf-nmZ">
+                                <rect key="frame" x="20" y="105.5" width="374" height="685"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="zVT-ds-TEd">
+                                <rect key="frame" x="20" y="261" width="374" height="374"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="TSU-0h-55Q">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="107.5"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="31V-ED-dJP" customClass="xImageView" customModule="TicTacToe" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="111.5" height="107.5"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GqW-Kb-XYC" customClass="xImageView" customModule="TicTacToe" customModuleProvider="target">
+                                                <rect key="frame" x="131.5" y="0.0" width="111" height="107.5"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YTU-ks-Y7E" customClass="xImageView" customModule="TicTacToe" customModuleProvider="target">
+                                                <rect key="frame" x="262.5" y="0.0" width="111.5" height="107.5"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="GC7-uH-A6y">
+                                        <rect key="frame" x="0.0" y="133.5" width="374" height="107"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="3" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="C1F-oB-NQd" customClass="xImageView" customModule="TicTacToe" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="111.5" height="107"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="4" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vu6-GV-R2R" customClass="xImageView" customModule="TicTacToe" customModuleProvider="target">
+                                                <rect key="frame" x="131.5" y="0.0" width="111" height="107"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TRI-NO-OZl" customClass="xImageView" customModule="TicTacToe" customModuleProvider="target">
+                                                <rect key="frame" x="262.5" y="0.0" width="111.5" height="107"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ALH-gR-GgA">
+                                        <rect key="frame" x="0.0" y="266.5" width="374" height="107.5"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="6" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="I8X-I0-YFJ" customClass="xImageView" customModule="TicTacToe" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="111.5" height="107.5"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="7" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Bxb-dx-9VK" customClass="xImageView" customModule="TicTacToe" customModuleProvider="target">
+                                                <rect key="frame" x="131.5" y="0.0" width="111" height="107.5"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="8" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KLY-8s-NbD" customClass="xImageView" customModule="TicTacToe" customModuleProvider="target">
+                                                <rect key="frame" x="262.5" y="0.0" width="111.5" height="107.5"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RZD-Vf-nmZ" secondAttribute="trailing" constant="20" id="3JF-5F-5dG"/>
+                            <constraint firstItem="zVT-ds-TEd" firstAttribute="width" secondItem="RZD-Vf-nmZ" secondAttribute="width" id="8Zu-d3-LnK"/>
+                            <constraint firstItem="RZD-Vf-nmZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="8x8-wV-XcV"/>
+                            <constraint firstItem="zVT-ds-TEd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9VC-m7-wK1"/>
+                            <constraint firstItem="RZD-Vf-nmZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NCx-40-znb"/>
+                            <constraint firstItem="zVT-ds-TEd" firstAttribute="height" secondItem="RZD-Vf-nmZ" secondAttribute="width" id="XoX-ca-rrd"/>
+                            <constraint firstItem="RZD-Vf-nmZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hn4-lj-Fh4"/>
+                            <constraint firstItem="zVT-ds-TEd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="jgC-1d-xOb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Tic Tac Toe" id="0Be-dN-D0l">
+                        <barButtonItem key="leftBarButtonItem" title="Connect" id="IcP-HN-5Y1">
+                            <connections>
+                                <action selector="connectWithPlayer:" destination="BYZ-38-t0r" id="jFC-dp-ipV"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="New Game" id="T6F-uc-SEQ">
+                            <connections>
+                                <action selector="newGame:" destination="BYZ-38-t0r" id="o6o-hv-ORM"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outletCollection property="fields" destination="31V-ED-dJP" collectionClass="NSMutableArray" id="Zyt-MJ-rAQ"/>
+                        <outletCollection property="fields" destination="GqW-Kb-XYC" collectionClass="NSMutableArray" id="eQ2-8e-tcu"/>
+                        <outletCollection property="fields" destination="YTU-ks-Y7E" collectionClass="NSMutableArray" id="YXp-ma-Ybj"/>
+                        <outletCollection property="fields" destination="C1F-oB-NQd" collectionClass="NSMutableArray" id="3z3-D8-a2T"/>
+                        <outletCollection property="fields" destination="vu6-GV-R2R" collectionClass="NSMutableArray" id="Nly-Iw-5oh"/>
+                        <outletCollection property="fields" destination="TRI-NO-OZl" collectionClass="NSMutableArray" id="FU7-ZT-jLe"/>
+                        <outletCollection property="fields" destination="I8X-I0-YFJ" collectionClass="NSMutableArray" id="KDX-DY-OLv"/>
+                        <outletCollection property="fields" destination="Bxb-dx-9VK" collectionClass="NSMutableArray" id="TUM-Tg-bgA"/>
+                        <outletCollection property="fields" destination="KLY-8s-NbD" collectionClass="NSMutableArray" id="VIW-cc-Xa9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="137.94642857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3qm-54-nvs">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="s0u-hY-1Rt" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Psv-W8-12e">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="u2j-DA-g4v"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="57C-gq-pAA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="board" width="684" height="685"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
