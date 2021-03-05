@@ -2,7 +2,8 @@
 //  GameController.swift
 //  TicTacToe
 //
-//  Created by Carlos Jorge on 4/3/21.//
+//  Created by Carlos Jorge on 4/3/21.
+//
 
 import UIKit
 import MultipeerConnectivity
